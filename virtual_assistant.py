@@ -2,7 +2,9 @@ import pyttsx3
 import speech_recognition as sr 
 import webbrowser 
 import datetime 
-import wikipedia 
+import wikipedia
+import pyaudio
+
 
 
 # this method is for taking the commands 
@@ -119,13 +121,13 @@ def Take_query():
 		# query matches and we get the perfect 
 		# output 
 		query = takeCommand().lower() 
-		if "open geeksforgeeks" in query: 
-			speak("Opening GeeksforGeeks ") 
+		if "open w3schools" in query: 
+			speak("Opening w3schools") 
 			
 			# in the open method we just to give the link 
 			# of the website and it automatically open 
 			# it in your default browser 
-			webbrowser.open("www.geeksforgeeks.com") 
+			webbrowser.open("www.w3schoools.com") 
 			continue
 		
 		elif "open google" in query: 
@@ -143,7 +145,7 @@ def Take_query():
 		
 		# this will exit and terminate the program 
 		elif "bye" in query: 
-			speak("Bye. Check Out GFG for more exicting things") 
+			speak("Bye. Check Out google for more exicting things") 
 			exit() 
 		
 		elif "from wikipedia" in query: 
@@ -161,7 +163,7 @@ def Take_query():
 			speak(result) 
 		
 		elif "tell me your name" in query: 
-			speak("I am Jarvis. Your deskstop Assistant") 
+			speak("I am Jacob. Your deskstop Assistant") 
 
 if __name__ == '__main__': 
 	
