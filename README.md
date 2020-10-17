@@ -23,4 +23,22 @@ It allow us to convert audio into text for further processing. To install this m
 
 *pip install wikipedia*
 
+##METHODS USED FOR VIRTUAL ASSISTANT
+
+**Speak Method**
+Speak Method will help us in taking the voice from the machine.
+
+ **Take query method**
+This method will check for the condition. If the condition is true it will return output. We can add any number if conditions for it and if the condition satisfy we will get the desired output.
+
+**takeCommand  method**
+This method is for taking the commands and recognizing the command from the speech_Recognition module
+
+**tellTime method**
+
+**Hello method**
+This is just used to greet the user with a hello message.
+
+ **Main method**
+Main method is the method where all the files get executed so we will call the Take_query method here so that it can recognize and tell or give us the desired output. 
 
